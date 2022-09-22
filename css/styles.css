@@ -36,7 +36,7 @@ https://coolors.co/palette/252323-70798c-f5f1ed-dad2bc-a99985
 
 html {
     font-size: 12px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -116,16 +116,15 @@ section {
 }
 
 .gallery article:hover img {
-    border-radius:0;
-    scale: 0.9;
-    z-index: 1000;
-    border:3px solid var(--img-border);
+    border-radius:0px;
+    
+    opacity: 1.0;
 }
 
 .gallery img {
     position: relative;
-    border-radius:20rem;
-    transition: .2s ease;
+    transition: .2s ease-in-out;
+    opacity: 0.8;
     border:1px solid var(--img-border);
 }
 
@@ -237,6 +236,4 @@ section {
     .gallery img {
         border-radius: 0;
     }
-    
-    .gallery article:hover img { scale:1; }
 }
